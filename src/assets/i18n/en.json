@@ -1,0 +1,218 @@
+{
+  "HEADER": {
+    "NAV": {
+      "HOME": "Home",
+      "ABOUT": "About Us",
+      "BLOG": "Blog",
+      "FAQS": "FAQs",
+      "PRODUCTS": "Products",
+      "FIND_US": "Find Us",
+      "SHOP": "SHOP"
+    }
+  },
+  "HERO": {
+    "TITLE": "Prepare.<br>Protect.<br>Maintain.",
+    "STATS": {
+      "YEARS": "5",
+      "DURABILITY": "Years<br>Durability",
+      "WASHES_COUNT": "250",
+      "WASHES_DESC": "Washings<br>Normal Conditions"
+    },
+    "SUBTITLE": "Meet the new<br>Coating© Generation.",
+    "DESC": "Exclusive blend, patented technology for longer durability. The 2020 product line of Liquid Light.",
+    "SHOP_BTN": "Shop Liquid Light",
+    "FEATURES": {
+      "PIONEERS": {
+        "TITLE": "Pioneers",
+        "DESC": "We are pioneers of graphene coating",
+        "LINK": "Learn more"
+      },
+      "ALCHEMISTS": {
+        "TITLE": "Alchemists",
+        "DESC": "The alchemists of the coating market",
+        "LINK": "Learn more"
+      },
+      "VISIONARIES": {
+        "TITLE": "Visionaries",
+        "DESC": "Get to know our visionaries.",
+        "LINK": "Learn more"
+      }
+    }
+  },
+  "FEATURES": {
+    "INTRO": "It is easy to get lost in the world of the valley mist when the sun shines on a freshly detailed car. Buy premium car care products online – from NG-4IN interior coatings to NG-14 nano graphene.",
+    "STRIP": {
+      "SMOOTH": "Ultra Smooth",
+      "HYDRO": "Extreme Hydrophobia",
+      "SPOTS": "Reduced Water Spots"
+    },
+    "PRO_LINE": {
+      "TITLE": "Liquid Light <span class=\"font-bold text-brand-navy\">PRO</span> Line",
+      "DESC": "Liquid Light PRO Line includes highly advanced car care products specifically developed for professional detailers and enthusiasts.",
+      "NGC_V3": {
+        "STATS": {
+          "DURABILITY": "Durability (5 Yrs)",
+          "CHEMICAL": "Chemical Res. (12>pH>1)",
+          "ETCHING": "Pencil Hardness (14H)",
+          "SMOOTHNESS": "Thickness (950-980nm)",
+          "GLOSS": "Gloss Rate (98%)",
+          "ABRASION": "Self-Healing (45-90°C)"
+        },
+        "DISCLAIMER": "* 5 Years / 250 Washings (Normal Conditions) | ** pH1 – pH12",
+        "INFO": {
+          "TITLE": "NG-14 NANO GRAPHENE<br><span class=\"text-brand-navy\">Coating.</span>",
+          "BULLETS": [
+            "Ultra-transparent, high-quality, single-pack liquid",
+            "Special polymer from an American compound (DIN-1048)",
+            "14H Pencil Hardness & Self-healing (45°C - 90°C)",
+            "Resistant to UV, rust, wear, friction & bacteria"
+          ],
+          "SUBTITLE": "One of the best realistic paints in the world",
+          "DESC": "The NG-14 Application is the 2020 product line of Liquid Light. It is an ultra-transparent nano-hybrid coating characterized by superior 14H hardness with the highest levels of protection. It penetrates capillary pores using Nano-Graphene technology, providing an amazing diamond shine and self-healing properties.",
+          "BTN_INSTALLER": "Find an Installer",
+          "BTN_BECOME": "Become an Installer"
+        }
+      },
+      "CMO_V2": {
+        "STATS": {
+          "DURABILITY": "Durability (24 Mo)",
+          "CHEMICAL": "Chemical Res. (12>pH>1)",
+          "ETCHING": "Drying Time (4 Hours)",
+          "SMOOTHNESS": "VOC Compliant (30%)",
+          "ABRASION": "Water Contact (105°)",
+          "GLOSS": "Gloss Rate (60% Natural)"
+        },
+        "DISCLAIMER": "* 24 Months Normal / 6 Months Heavy | ** pH1 – pH12",
+        "INFO": {
+          "TITLE": "NG-4IN INTERIOR<br><span class=\"text-brand-navy\">Coating.</span>",
+          "BULLETS": [
+            "Transparent nano-hybrid coating & fragrance compound",
+            "Natural factory sheen without excessive shine",
+            "Eliminates bacteria, odors, and relieves nervous tension",
+            "Activates Dopamine Response and promotes alertness"
+          ],
+          "SUBTITLE": "A real physiological and psychological effect",
+          "DESC": "The NG-4IN Application is the 2025 product line of Liquid Light. It is a single-pack, transparent nano-hybrid coating and fragrance compound that penetrates through capillary pores using Nanogram technology. It offers protection against dust, UV rays, bacteria, and fungi while providing a strong, refreshing scent.",
+          "BTN_INSTALLER": "Find an Installer",
+          "BTN_COMMERCIAL": "Commercial Customers"
+        }
+      },
+      "ICONS": {
+        "CORROSION": "Corrosion Resistant",
+        "HYDRO": "Ultra Hydrophobic",
+        "EASY_CLEAN": "Easy to Clean Effect",
+        "ANTI_FOUL": "Anti-Fouling",
+        "SPREADS": "Simplest Application"
+      }
+    },
+    "CONSUMER_LINE": {
+      "TITLE": "Liquid Light <span class=\"font-bold text-brand-navy\">CONSUMER</span> Line",
+      "DESC": "Do it yourself? No problem.",
+      "HYBRID": {
+        "STATS": {
+          "DURABILITY": "Maximum Durability*",
+          "CHEMICAL": "Chemical Resistance**",
+          "ETCHING": "Reduced Etching",
+          "SMOOTHNESS": "Smoothness",
+          "GLOSS": "Gloss Level",
+          "ABRASION": "Abrasion Resistance"
+        },
+        "DISCLAIMER": "* 170 Washes pH-neutral | ** pH3 – pH13",
+        "INFO": {
+          "TITLE": "HYBRID<br><span class=\"text-brand-navy\">GRAPHENE</span>",
+          "BULLETS": [
+            "Pro-Grade Quality",
+            "Simplest Application",
+            "Versatile and suitable for most surfaces"
+          ],
+          "SUBTITLE": "The Power of the Original GRAPHENE COATING",
+          "SUBTEXT": "Now for the dedicated enthusiast and ProSumer",
+          "DESC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          "BTN_BUY": "Buy Graphene Coating"
+        }
+      }
+    }
+  },
+  "CATEGORIES": {
+    "WHY_PROTECT": {
+      "TITLE": "WHY PROTECT THE VEHICLE?",
+      "DESC": "Liquid Light coatings reduce chemical reactions from contaminants, which are exacerbated by heat and UV radiation and can otherwise lead to etching, water spots, and stains. The nanoparticles act as heat shields, creating high mechanical strength and thermal stability.",
+      "BTN": "Buy Liquid Light Coating"
+    },
+    "WHY_NANO": {
+      "TITLE": "WHY NANOTECHNOLOGY?",
+      "DESC": "Nanocoatings are scientifically engineered with nanoparticles that bond to the surfaces they are applied to, forming a protective layer that increases the durability of the surface.",
+      "BTN": "Buy Nano Coating"
+    },
+    "EXCEPTIONAL": {
+      "TITLE": "Exceptional Material.",
+      "DESC": "Liquid Light has produced something novel, it's called NG-14 - NANO GRAPHENE COATING",
+      "SUBTEXT": "Find out more today.",
+      "BTN": "Shop Now"
+    },
+    "OFFER": {
+      "TITLE": "Offer strikes again.",
+      "DESC": "Black Friday may be over, but you can still find our most exceptional bargains here: www.liquidlight.at and via email if you have subscribed to our newsletter.",
+      "PRODUCT_1": {
+        "SUB": "NG-14 GRAPHENE",
+        "TITLE": "NG-14 GRAPHENE",
+        "BTN": "ORDER Now"
+      },
+      "PRODUCT_2": {
+        "SUB": "3 Pack NG-4IN Interior",
+        "TITLE": "3 Pack NG-4IN Interior",
+        "PRICE": "€ 347.88",
+        "BTN": "ORDER Now"
+      }
+    },
+    "REVIEWS": {
+      "TITLE": "A good recommendation is worth its weight in gold",
+      "DESC": "Only good advice, execution & quality leads to customer satisfaction. Read user reviews here and learn more about us.",
+      "REV_1": {
+        "QUOTE": "Professional and Competent!",
+        "AUTHOR": "George Heinen",
+        "LOC": "Austria"
+      },
+      "REV_2": {
+        "QUOTE": "Very pleasant consultation",
+        "AUTHOR": "Jörg Gruber",
+        "LOC": "Austria"
+      },
+      "REV_3": {
+        "QUOTE": "Great Service !",
+        "AUTHOR": "Martin Knevel",
+        "LOC": "Austria"
+      },
+      "REV_4": {
+        "QUOTE": "Everything is perfect.",
+        "AUTHOR": "Bettina Wittenstein",
+        "LOC": "Germany"
+      }
+    }
+  },
+  "FOOTER": {
+    "CONTACT": {
+      "TITLE": "Contact",
+      "PHONE": "Phone:",
+      "EMAIL": "Email:",
+      "ADDRESS": "Address: Kaiserbergstraße 8, 6330 Kufstein | Austria"
+    },
+    "PAYMENT": {
+      "TITLE": "Payment Methods"
+    },
+    "LINKS": {
+      "TITLE": "Links",
+      "L1": "Find an INSTALLER",
+      "L2": "Go to the SHOP"
+    },
+    "NEWSLETTER": {
+      "TITLE": "Newsletter",
+      "DESC": "Subscribe to our newsletter for updates.",
+      "BTN": "OK"
+    },
+    "BOTTOM": {
+      "IMPRINT": "IMPRINT",
+      "LEGAL": "Legal Notice: All trademarks are the property of their respective owners and of Liquid Light."
+    }
+  }
+}

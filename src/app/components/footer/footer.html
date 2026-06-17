@@ -1,0 +1,51 @@
+<footer class="bg-dark text-white/70 pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <!-- Contact -->
+      <div>
+        <h3 class="text-white font-bold uppercase tracking-wider text-sm mb-4">{{ 'FOOTER.CONTACT.TITLE' | translate }}</h3>
+        <address class="not-italic text-xs space-y-2 leading-relaxed">
+          <p>{{ 'FOOTER.CONTACT.PHONE' | translate }} <a href="tel:+436764388783" class="hover:text-brand-gold transition-colors">+43 676 43 88 783</a></p>
+          <p>{{ 'FOOTER.CONTACT.EMAIL' | translate }} <a href="mailto:info@liquidlight.at" class="hover:text-brand-gold transition-colors">info@liquidlight.at</a></p>
+          <p>{{ 'FOOTER.CONTACT.ADDRESS' | translate }}</p>
+        </address>
+      </div>
+
+      <!-- Payment -->
+      <div>
+        <h3 class="text-white font-bold uppercase tracking-wider text-sm mb-4">{{ 'FOOTER.PAYMENT.TITLE' | translate }}</h3>
+        <div class="flex gap-3">
+          <div class="bg-white/10 rounded px-3 py-2 text-xs font-bold text-white/60">VISA</div>
+          <div class="bg-white/10 rounded px-3 py-2 text-xs font-bold text-white/60">MC</div>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h3 class="text-white font-bold uppercase tracking-wider text-sm mb-4">{{ 'FOOTER.LINKS.TITLE' | translate }}</h3>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#" class="hover:text-brand-gold transition-colors">{{ 'FOOTER.LINKS.L1' | translate }}</a></li>
+          <li><a href="#" class="hover:text-brand-gold transition-colors">{{ 'FOOTER.LINKS.L2' | translate }}</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-white font-bold uppercase tracking-wider text-sm mb-4">{{ 'FOOTER.NEWSLETTER.TITLE' | translate }}</h3>
+        <p class="text-xs mb-3">{{ 'FOOTER.NEWSLETTER.DESC' | translate }}</p>
+        <div class="flex">
+          <input type="email" placeholder="Email" class="bg-white/10 border border-white/20 rounded-l px-3 py-2 text-xs text-white placeholder:text-white/40 flex-1 outline-none focus:border-brand-gold transition-colors">
+          <button class="bg-brand-gold text-dark px-4 py-2 rounded-r text-xs font-bold uppercase hover:bg-brand-gold-light transition-colors">{{ 'FOOTER.NEWSLETTER.BTN' | translate }}</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white transition-colors">{{ 'FOOTER.BOTTOM.IMPRINT' | translate }}</a>
+      </div>
+      <p class="text-white/40">{{ 'FOOTER.BOTTOM.LEGAL' | translate }}</p>
+    </div>
+  </div>
+</footer>

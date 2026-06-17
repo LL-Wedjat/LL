@@ -1,0 +1,382 @@
+<!-- Intro text banner -->
+<section class="bg-black text-white py-12 border-b border-white/10">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs md:text-sm text-white/70 leading-relaxed font-light">
+      {{ 'FEATURES.INTRO' | translate }}
+    </p>
+  </div>
+</section>
+
+<!-- Features strip: Ultra Glatt / Extreme Hydrophobie / Reduzierte Wasserflecken -->
+<section class="bg-white py-10 border-b border-gray-100">
+  <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div>
+      <h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-black">{{ 'FEATURES.STRIP.SMOOTH' | translate }}</h4>
+    </div>
+    <div>
+      <h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-black">{{ 'FEATURES.STRIP.HYDRO' | translate }}</h4>
+    </div>
+    <div>
+      <h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-black">{{ 'FEATURES.STRIP.SPOTS' | translate }}</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- LIQUID LIGHT PRO LINE                            -->
+<!-- ============================================== -->
+<section class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-2xl md:text-3xl font-light tracking-wide text-black mb-4" [innerHTML]="'FEATURES.PRO_LINE.TITLE' | translate">
+      </h2>
+      <p class="text-gray-500 text-xs max-w-2xl mx-auto leading-relaxed">
+        {{ 'FEATURES.PRO_LINE.DESC' | translate }}
+      </p>
+    </div>
+
+    <!-- PRO Product 1: NGC V3 -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-10 items-center mb-24">
+      
+      <!-- Left: Product Image Placeholder -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="w-40 h-64 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center shadow-inner relative">
+          <span class="text-gray-400 text-[10px] uppercase tracking-widest text-center px-2">Insert<br>NG-14 Bottle</span>
+        </div>
+      </div>
+
+      <!-- Middle: Stats bars -->
+      <div class="px-0 lg:px-8">
+        <div class="space-y-5">
+          <!-- Stat 1 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.DURABILITY' | translate }}</span><span class="text-brand-gold">100%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:100%"></div></div>
+          </div>
+          <!-- Stat 2 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.CHEMICAL' | translate }}</span><span class="text-brand-gold">100%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:100%"></div></div>
+          </div>
+          <!-- Stat 3 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.ETCHING' | translate }}</span><span class="text-brand-gold">97%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:97%"></div></div>
+          </div>
+          <!-- Stat 4 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.SMOOTHNESS' | translate }}</span><span class="text-brand-gold">96%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:96%"></div></div>
+          </div>
+          <!-- Stat 5 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.GLOSS' | translate }}</span><span class="text-brand-gold">95%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:95%"></div></div>
+          </div>
+          <!-- Stat 6 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.NGC_V3.STATS.ABRASION' | translate }}</span><span class="text-brand-gold">92%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:92%"></div></div>
+          </div>
+        </div>
+        <p class="text-[10px] text-gray-400 mt-4 text-center lg:text-left">{{ 'FEATURES.PRO_LINE.NGC_V3.DISCLAIMER' | translate }}</p>
+      </div>
+
+      <!-- Right: Feature Icons Column -->
+      <div class="flex flex-col gap-6 items-center lg:items-start">
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/2.-CORROSION-RESISTANT-1.png" alt="Corrosion Resistant" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.CORROSION' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/11.-ULTRA-HYDROPHOBIC-1.png" alt="Ultra Hydrophobic" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.HYDRO' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/12.-EASY-CLEANING-1.png" alt="Easy Cleaning" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.EASY_CLEAN' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/14.-ANTI-FOULING-1.png" alt="Anti Fouling" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.ANTI_FOUL' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/15.-SPREADS-EASY-1.png" alt="Spreads Easy" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.SPREADS' | translate }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 1 Info Text Block -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-24 pl-0 lg:pl-10">
+      <div>
+        <h3 class="text-2xl font-bold uppercase tracking-widest text-brand-gold mb-5" [innerHTML]="'FEATURES.PRO_LINE.NGC_V3.INFO.TITLE' | translate">
+        </h3>
+        <ul class="text-sm space-y-3 list-none text-gray-600 pl-0">
+          @for (bullet of 'FEATURES.PRO_LINE.NGC_V3.INFO.BULLETS' | translate; track $index) {
+            <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1.5 before:w-1.5 before:h-1.5 before:bg-brand-gold before:rounded-full">{{ bullet }}</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-base font-bold uppercase text-brand-navy mb-4">{{ 'FEATURES.PRO_LINE.NGC_V3.INFO.SUBTITLE' | translate }}</h4>
+        <p class="text-sm text-gray-500 leading-relaxed mb-6">{{ 'FEATURES.PRO_LINE.NGC_V3.INFO.DESC' | translate }}</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-black text-white hover:bg-brand-gold hover:text-black font-bold px-6 py-3 rounded-none text-[10px] uppercase tracking-widest text-center transition-colors">
+            {{ 'FEATURES.PRO_LINE.NGC_V3.INFO.BTN_INSTALLER' | translate }}
+          </a>
+          <a href="#" class="bg-black text-white hover:bg-brand-gold hover:text-black font-bold px-6 py-3 rounded-none text-[10px] uppercase tracking-widest text-center transition-colors">
+            {{ 'FEATURES.PRO_LINE.NGC_V3.INFO.BTN_BECOME' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="w-24 h-[1px] bg-gray-300 mx-auto mb-24"></div>
+
+    <!-- PRO Product 2: CMO V2 -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-10 items-center mb-24">
+      
+      <!-- Left: Product Image Placeholder -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="w-40 h-64 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center shadow-inner relative">
+          <span class="text-gray-400 text-[10px] uppercase tracking-widest text-center px-2">Insert<br>NG-4IN Bottle</span>
+        </div>
+      </div>
+
+      <!-- Middle: Stats bars -->
+      <div class="px-0 lg:px-8">
+        <div class="space-y-5">
+          <!-- Stat 1 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.DURABILITY' | translate }}</span><span class="text-brand-gold">90%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:90%"></div></div>
+          </div>
+          <!-- Stat 2 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.CHEMICAL' | translate }}</span><span class="text-brand-gold">95%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:95%"></div></div>
+          </div>
+          <!-- Stat 3 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.ETCHING' | translate }}</span><span class="text-brand-gold">90%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:90%"></div></div>
+          </div>
+          <!-- Stat 4 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.SMOOTHNESS' | translate }}</span><span class="text-brand-gold">88%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:88%"></div></div>
+          </div>
+          <!-- Stat 5 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.ABRASION' | translate }}</span><span class="text-brand-gold">85%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
+          </div>
+          <!-- Stat 6 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.PRO_LINE.CMO_V2.STATS.GLOSS' | translate }}</span><span class="text-brand-gold">92%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:92%"></div></div>
+          </div>
+        </div>
+        <p class="text-[10px] text-gray-400 mt-4 text-center lg:text-left">{{ 'FEATURES.PRO_LINE.CMO_V2.DISCLAIMER' | translate }}</p>
+      </div>
+
+      <!-- Right: Feature Icons Column -->
+      <div class="flex flex-col gap-6 items-center lg:items-start">
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/2.-CORROSION-RESISTANT-1.png" alt="Corrosion Resistant" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.CORROSION' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/11.-ULTRA-HYDROPHOBIC-1.png" alt="Ultra Hydrophobic" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.HYDRO' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/12.-EASY-CLEANING-1.png" alt="Easy Cleaning" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.EASY_CLEAN' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/14.-ANTI-FOULING-1.png" alt="Anti Fouling" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.ANTI_FOUL' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/15.-SPREADS-EASY-1.png" alt="Spreads Easy" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.SPREADS' | translate }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 Info Text Block -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-0 lg:pl-10">
+      <div>
+        <h3 class="text-2xl font-bold uppercase tracking-widest text-brand-gold mb-5" [innerHTML]="'FEATURES.PRO_LINE.CMO_V2.INFO.TITLE' | translate">
+        </h3>
+        <ul class="text-sm space-y-3 list-none text-gray-600 pl-0">
+          @for (bullet of 'FEATURES.PRO_LINE.CMO_V2.INFO.BULLETS' | translate; track $index) {
+            <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1.5 before:w-1.5 before:h-1.5 before:bg-brand-gold before:rounded-full">{{ bullet }}</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-base font-bold uppercase text-brand-navy mb-4">{{ 'FEATURES.PRO_LINE.CMO_V2.INFO.SUBTITLE' | translate }}</h4>
+        <p class="text-sm text-gray-500 leading-relaxed mb-6">{{ 'FEATURES.PRO_LINE.CMO_V2.INFO.DESC' | translate }}</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-black text-white hover:bg-brand-gold hover:text-black font-bold px-6 py-3 rounded-none text-[10px] uppercase tracking-widest text-center transition-colors">
+            {{ 'FEATURES.PRO_LINE.CMO_V2.INFO.BTN_INSTALLER' | translate }}
+          </a>
+          <a href="#" class="bg-black text-white hover:bg-brand-gold hover:text-black font-bold px-6 py-3 rounded-none text-[10px] uppercase tracking-widest text-center transition-colors">
+            {{ 'FEATURES.PRO_LINE.CMO_V2.INFO.BTN_COMMERCIAL' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- LIQUID LIGHT CONSUMER LINE                       -->
+<!-- ============================================== -->
+<section class="bg-[#fafafa] py-20 border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-2xl md:text-3xl font-light tracking-wide text-black mb-4" [innerHTML]="'FEATURES.CONSUMER_LINE.TITLE' | translate">
+      </h2>
+      <p class="text-gray-500 text-xs max-w-2xl mx-auto leading-relaxed">
+        {{ 'FEATURES.CONSUMER_LINE.DESC' | translate }}
+      </p>
+    </div>
+
+    <!-- Consumer Product: HYBRID GRAPHENE -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-10 items-center mb-24">
+      
+      <!-- Left: Product Image Placeholder -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="w-40 h-64 bg-white border border-gray-200 rounded-lg flex items-center justify-center shadow-md relative">
+          <span class="text-gray-400 text-[10px] uppercase tracking-widest text-center px-2">Insert<br>HYBRID Bottle</span>
+        </div>
+      </div>
+
+      <!-- Middle: Stats bars -->
+      <div class="px-0 lg:px-8">
+        <div class="space-y-5">
+          <!-- Stat 1 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.DURABILITY' | translate }}</span><span class="text-brand-gold">75%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:75%"></div></div>
+          </div>
+          <!-- Stat 2 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.CHEMICAL' | translate }}</span><span class="text-brand-gold">80%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:80%"></div></div>
+          </div>
+          <!-- Stat 3 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.ETCHING' | translate }}</span><span class="text-brand-gold">78%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:78%"></div></div>
+          </div>
+          <!-- Stat 4 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.SMOOTHNESS' | translate }}</span><span class="text-brand-gold">85%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
+          </div>
+          <!-- Stat 5 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.GLOSS' | translate }}</span><span class="text-brand-gold">88%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:88%"></div></div>
+          </div>
+          <!-- Stat 6 -->
+          <div>
+            <div class="flex justify-between text-sm font-bold text-black mb-2">
+              <span class="uppercase">{{ 'FEATURES.CONSUMER_LINE.HYBRID.STATS.ABRASION' | translate }}</span><span class="text-brand-gold">70%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+        <p class="text-[10px] text-gray-400 mt-4 text-center lg:text-left">{{ 'FEATURES.CONSUMER_LINE.HYBRID.DISCLAIMER' | translate }}</p>
+      </div>
+
+      <!-- Right: Feature Icons Column -->
+      <div class="flex flex-col gap-6 items-center lg:items-start">
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/2.-CORROSION-RESISTANT-1.png" alt="Corrosion Resistant" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.CORROSION' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/11.-ULTRA-HYDROPHOBIC-1.png" alt="Ultra Hydrophobic" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.HYDRO' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/12.-EASY-CLEANING-1.png" alt="Easy Cleaning" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.EASY_CLEAN' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/14.-ANTI-FOULING-1.png" alt="Anti Fouling" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.ANTI_FOUL' | translate }}</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/15.-SPREADS-EASY-1.png" alt="Spreads Easy" class="w-12 h-12 object-contain filter grayscale contrast-200">
+          <span class="text-xs font-bold uppercase text-brand-navy">{{ 'FEATURES.PRO_LINE.ICONS.SPREADS' | translate }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 Info Text Block -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-0 lg:pl-10">
+      <div>
+        <h3 class="text-2xl font-bold uppercase tracking-widest text-brand-gold mb-5" [innerHTML]="'FEATURES.CONSUMER_LINE.HYBRID.INFO.TITLE' | translate">
+        </h3>
+        <ul class="text-sm space-y-3 list-none text-gray-600 pl-0">
+          @for (bullet of 'FEATURES.CONSUMER_LINE.HYBRID.INFO.BULLETS' | translate; track $index) {
+            <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1.5 before:w-1.5 before:h-1.5 before:bg-brand-gold before:rounded-full">{{ bullet }}</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-base font-bold uppercase text-brand-navy mb-4">{{ 'FEATURES.CONSUMER_LINE.HYBRID.INFO.SUBTITLE' | translate }}</h4>
+        <p class="text-sm text-gray-500 leading-relaxed mb-6">{{ 'FEATURES.CONSUMER_LINE.HYBRID.INFO.DESC' | translate }}</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-black text-white hover:bg-brand-gold hover:text-black font-bold px-6 py-3 rounded-none text-[10px] uppercase tracking-widest text-center transition-colors">
+            {{ 'FEATURES.CONSUMER_LINE.HYBRID.INFO.BTN_BUY' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
