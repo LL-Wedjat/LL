@@ -214,5 +214,69 @@
       "IMPRINT": "IMPRINT",
       "LEGAL": "Legal Notice: All trademarks are the property of their respective owners and of Liquid Light."
     }
+  },
+  "PHARAOHS": {
+    "HERO": {
+      "TITLE": "Pharaohs International Group",
+      "SUBTITLE": "Integrated Advertising Solutions & Marketing Services"
+    },
+    "BIO": {
+      "TEXT": "Pharaohs International Group is a leading force in integrated advertising solutions, marketing consultation, and specialized engineering services across Egypt and the Middle East.<br><br>With decades of industry expertise, we empower brands to realize their vision through state-of-the-art printing technologies, large-scale event management, and innovative promotional strategies. We pride ourselves on delivering uncompromising quality, strategic insights, and end-to-end solutions that drive tangible business growth."
+    },
+    "ORGANIZATION": {
+      "TITLE": "Pharaohs International Organization",
+      "DESC": "For Human Rights and Development"
+    },
+    "COMPANIES": {
+      "TITLE": "Pharaohs International Companies",
+      "ITEMS": [
+        {
+          "name": "Marketing Consultants",
+          "description": "Providing data-driven strategic guidance, brand positioning, and comprehensive event creation to elevate your market presence and engage your target audience effectively."
+        },
+        {
+          "name": "Advertising & Printing",
+          "description": "Delivering world-class digital, offset, and large-format printing. From bespoke promotional materials and signage to complete corporate branding packages."
+        },
+        {
+          "name": "Marketing Research",
+          "description": "Conducting in-depth market analysis, matchmaking sessions, and competitive intelligence to help businesses successfully navigate and expand into new markets."
+        },
+        {
+          "name": "Trade Fairs & Conferences",
+          "description": "Expert end-to-end management of large-scale trade fairs, corporate conferences, and festivals, complete with custom stand fabrication and logistical support."
+        },
+        {
+          "name": "Hotels & Resorts Supply",
+          "description": "Serving as trusted general suppliers for the hospitality sector, providing premium operational materials, uniforms, and specialized equipment for hotels and resorts."
+        },
+        {
+          "name": "Imports & Exports",
+          "description": "Facilitating seamless international trade with rigorous quality control, connecting local markets with global suppliers to ensure a reliable supply chain."
+        },
+        {
+          "name": "Construction & Epoxy",
+          "description": "Executing specialized engineering constructions and decorative finishes, featuring cutting-edge luminous epoxies and light-retaining paint technologies."
+        }
+      ]
+    },
+    "PROMO": {
+      "LIQUID_LIGHT": {
+        "TITLE": "Discover Liquid Light",
+        "DESC": "The next generation of Nano Graphene Coating. Uncompromising protection, ultimate gloss, and advanced automotive care technology.",
+        "BTN": "Explore Liquid Light"
+      }
+    },
+    "CLIENTS": {
+      "TITLE": "Our Esteemed Clients"
+    },
+    "FOOTER": {
+      "DIRECTOR": "General Manager Dr. Tamer Samir",
+      "EMAILS_LABEL": "Email:",
+      "PHONE_LABEL": "Tel:",
+      "FAX_LABEL": "Tel & Fax:",
+      "REG_TITLE": "Registration",
+      "REGISTRATION": "Petroleum Authority Registration No. 131 Committee 8/22/23"
+    }
   }
 }
