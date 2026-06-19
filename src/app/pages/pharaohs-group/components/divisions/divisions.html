@@ -7,48 +7,40 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-      <div>
+      <div class="order-2 lg:order-1">
         @for (item of companies; track item.nameKey; let i = $index) {
-          <div class="border-b border-gray-200">
-            <button
-              (click)="toggle(i)"
-              class="w-full flex items-center justify-between py-5 px-6 text-left hover:bg-gray-50 transition-colors cursor-pointer"
-            >
-              <span class="text-lg font-semibold text-[#1A365D]">{{ item.nameKey | translate }}</span>
-              <span class="text-[#8B4513] text-2xl font-light ml-4 transition-transform duration-300"
-                    [class.rotate-45]="expandedIndex() === i">
-                +
-              </span>
-            </button>
-            @if (expandedIndex() === i) {
-              <div class="px-6 pb-5 text-gray-600 leading-relaxed animate-slideDown">
-                {{ item.descKey | translate }}
-              </div>
-            }
+        <div class="border-b border-gray-200">
+          <button (click)="toggle(i)"
+            class="w-full flex items-center justify-between py-5 px-6 text-left hover:bg-gray-50 transition-colors cursor-pointer">
+            <span class="text-lg font-semibold text-[#1A365D]">{{ item.nameKey | translate }}</span>
+            <span class="text-[#8B4513] text-2xl font-light ml-4 transition-transform duration-300"
+              [class.rotate-45]="expandedIndex() === i">
+              +
+            </span>
+          </button>
+          @if (expandedIndex() === i) {
+          <div class="px-6 pb-5 text-gray-600 leading-relaxed animate-slideDown">
+            {{ item.descKey | translate }}
           </div>
+          }
+        </div>
         }
       </div>
 
-      <div class="group block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div class="h-1.5 bg-gradient-to-r from-[#1A365D] to-[#8B4513]"></div>
+      <div
+        class="order-1 lg:order-2 group block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <div class="h-1.5 bg-linear-to-r from-[#1A365D] to-[#8B4513]"></div>
         <div class="p-8 text-center">
-          <img
-            src="assets/logos/Liquid Light.png"
-            alt="Liquid Light"
-            class="mx-auto mb-6 max-w-[280px] w-full h-auto object-contain"
-          />
+          <img src="assets/logos/Liquid Light.png" alt="Liquid Light"
+            class="mx-auto mb-6 max-w-[280px] w-full h-auto object-contain" />
           <h3 class="text-xl font-bold text-[#1A365D] mb-3" style="font-family: 'Georgia', serif;">
             {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.TITLE' | translate }}
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
             {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.DESC' | translate }}
           </p>
-          <a
-            routerLink="/Liquid-Light"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block bg-[#1A365D] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 transform hover:-translate-y-0.5"
-          >
+          <a routerLink="/liquid-light" target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-[#1A365D] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 transform hover:-translate-y-0.5">
             {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.BTN' | translate }}
           </a>
         </div>
@@ -56,7 +48,8 @@
 
     </div>
 
-    <div class="max-w-4xl mx-auto px-6 py-12 mt-24 bg-gradient-to-r from-transparent via-[#1A365D]/5 to-transparent rounded-lg relative">
+    <div
+      class="max-w-4xl mx-auto px-6 py-12 mt-24 bg-linear-to-r from-transparent via-[#1A365D]/5 to-transparent rounded-lg relative">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#8B4513]"></div>
       <h2 class="text-3xl font-bold text-center text-[#1A365D] mb-6 mt-4" style="font-family: 'Georgia', serif;">
         {{ 'PHARAOHS.ORGANIZATION.TITLE' | translate }}

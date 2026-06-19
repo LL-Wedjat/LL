@@ -271,11 +271,10 @@
       "TITLE": "Our Esteemed Clients"
     },
     "FOOTER": {
-      "DIRECTOR": "General Manager Dr. Tamer Samir",
+      "CONTACT": "Contact us",
       "EMAILS_LABEL": "Email:",
       "PHONE_LABEL": "Tel:",
       "FAX_LABEL": "Tel & Fax:",
-      "REG_TITLE": "Registration",
       "REGISTRATION": "Petroleum Authority Registration No. 131 Committee 8/22/23"
     }
   }
