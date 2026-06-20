@@ -27,38 +27,18 @@
         }
       </div>
 
-      <div
-        class="order-1 lg:order-2 group block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div class="h-1.5 bg-linear-to-r from-[#1A365D] to-[#8B4513]"></div>
-        <div class="p-8 text-center">
-          <img src="assets/logos/Liquid Light.png" alt="Liquid Light"
-            class="mx-auto mb-6 max-w-[280px] w-full h-auto object-contain" />
-          <h3 class="text-xl font-bold text-[#1A365D] mb-3" style="font-family: 'Georgia', serif;">
-            {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.TITLE' | translate }}
-          </h3>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.DESC' | translate }}
-          </p>
-          <a routerLink="/liquid-light" target="_blank" rel="noopener noreferrer"
-            class="inline-block bg-[#1A365D] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 transform hover:-translate-y-0.5">
-            {{ 'PHARAOHS.PROMO.LIQUID_LIGHT.BTN' | translate }}
-          </a>
-        </div>
+      <div class="order-1 lg:order-2 bg-[#1A365D] rounded-2xl shadow-xl overflow-hidden relative flex flex-col justify-center items-center p-10 h-full min-h-[300px]">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-[3px] bg-[#8B4513] shadow-[0_0_10px_rgba(139,69,19,0.5)]"></div>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-6" style="font-family: 'Georgia', serif;">
+          {{ 'PHARAOHS.ORGANIZATION.TITLE' | translate }}
+        </h2>
+        <div class="w-16 h-1 bg-[#8B4513] mx-auto mb-8 rounded-full"></div>
+        <p class="text-lg md:text-xl text-center text-amber-100 font-semibold tracking-wide uppercase leading-relaxed">
+          {{ 'PHARAOHS.ORGANIZATION.DESC' | translate }}
+        </p>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-[3px] bg-[#8B4513] shadow-[0_0_10px_rgba(139,69,19,0.5)]"></div>
       </div>
 
-    </div>
-
-    <div
-      class="max-w-4xl mx-auto px-6 py-12 mt-24 bg-linear-to-r from-transparent via-[#1A365D]/5 to-transparent rounded-lg relative">
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#8B4513]"></div>
-      <h2 class="text-3xl font-bold text-center text-[#1A365D] mb-6 mt-4" style="font-family: 'Georgia', serif;">
-        {{ 'PHARAOHS.ORGANIZATION.TITLE' | translate }}
-      </h2>
-      <div class="w-12 h-1 bg-[#8B4513] mx-auto mb-6"></div>
-      <p class="text-xl md:text-2xl text-center text-[#8B4513] font-semibold tracking-wide uppercase">
-        {{ 'PHARAOHS.ORGANIZATION.DESC' | translate }}
-      </p>
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-[2px] bg-[#8B4513]"></div>
     </div>
 
   </div>

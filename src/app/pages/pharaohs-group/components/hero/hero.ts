@@ -9,4 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { 'class': 'block' }
 })
-export class PhHero {}
+export class PhHero {
+  scrollToBanner(): void {
+    const banner = document.getElementById('liquid-light-banner');
+    if (banner) {
+      banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}

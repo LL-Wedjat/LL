@@ -1,0 +1,105 @@
+.ll-banner-section {
+  width: 100%;
+  background: linear-gradient(135deg, #0a1128 0%, #1a365d 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 1rem;
+  border-top: 2px solid rgba(139, 69, 19, 0.5);
+  border-bottom: 2px solid rgba(139, 69, 19, 0.5);
+}
+
+.ll-banner-section::before,
+.ll-banner-section::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(218, 165, 32, 0.6) 50%, transparent 100%);
+}
+
+.ll-banner-section::before {
+  top: 10px;
+}
+
+.ll-banner-section::after {
+  bottom: 10px;
+}
+
+.ll-banner-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.ll-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-wrapper {
+  margin-bottom: 1rem;
+}
+
+.ll-logo {
+  max-width: 220px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
+
+.ll-title {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  color: #FFF;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.ll-desc {
+  font-size: 1.125rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.ll-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+}
+
+.ll-btn:hover {
+  background: linear-gradient(135deg, #A0522D 0%, #DEB887 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .ll-title {
+    font-size: 2rem;
+  }
+  .ll-desc {
+    font-size: 1rem;
+  }
+  .ll-banner-section {
+    padding: 4rem 1rem;
+  }
+}
