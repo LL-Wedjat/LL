@@ -194,8 +194,7 @@
     "CONTACT": {
       "TITLE": "Contact",
       "PHONE": "Phone:",
-      "EMAIL": "Email:",
-      "ADDRESS": "Address: Kaiserbergstraße 8, 6330 Kufstein | Austria"
+      "EMAIL": "Email:"
     },
     "PAYMENT": {
       "TITLE": "Payment Methods"
@@ -217,20 +216,21 @@
   },
   "PHARAOHS": {
     "HERO": {
-      "TITLE": "Pharaohs International Group",
+      "TITLE": "Pharaohs Int'l Group Pty. Ltd.",
       "SUBTITLE": "Integrated Advertising Solutions & Marketing Services",
-      "LL_CTA": "Discover Liquid Light"
+      "LL_CTA": "Discover Liquid Light",
+      "DISCOVER": "Discover"
     },
     "BIO": {
-      "TEXT": "Pharaohs International Group is a leading force in integrated advertising solutions, marketing consultation, and specialized engineering services across Egypt and the Middle East.<br><br>With decades of industry expertise, we empower brands to realize their vision through state-of-the-art printing technologies, large-scale event management, and innovative promotional strategies. We pride ourselves on delivering uncompromising quality, strategic insights, and end-to-end solutions that drive tangible business growth."
+      "TEXT": "Pharaohs Int'l Group is a leading force in integrated advertising solutions, marketing consultation, and specialized engineering services across Egypt and the Middle East.<br><br>With decades of industry expertise, we empower brands to realize their vision through state-of-the-art printing technologies, large-scale event management, and innovative promotional strategies. We pride ourselves on delivering uncompromising quality, strategic insights, and end-to-end solutions that drive tangible business growth."
     },
-    "GROUP_CONSISTS_OF": "Pharaohs International Group consists of:",
+    "GROUP_CONSISTS_OF": "Pharaohs Int'l Group consists of:",
     "ORGANIZATION": {
-      "TITLE": "Pharaohs International Organization",
+      "TITLE": "Pharaohs Int'l Organization",
       "DESC": "For Human Rights and Development"
     },
     "COMPANIES": {
-      "TITLE": "Pharaohs International Companies",
+      "TITLE": "Pharaohs Int'l Companies",
       "ITEMS": [
         {
           "name": "Marketing Consultants",
@@ -254,7 +254,7 @@
         },
         {
           "name": "Imports & Exports",
-          "description": "Facilitating seamless international trade with rigorous quality control, connecting local markets with global suppliers to ensure a reliable supply chain."
+          "description": "Facilitating seamless Int'l trade with rigorous quality control, connecting local markets with global suppliers to ensure a reliable supply chain."
         },
         {
           "name": "Construction & Epoxy",
@@ -275,9 +275,10 @@
     "FOOTER": {
       "CONTACT": "Contact us",
       "EMAILS_LABEL": "Email:",
-      "PHONE_LABEL": "Tel:",
-      "FAX_LABEL": "Tel & Fax:",
+      "PHONE_LABEL": "Phone:",
+      "FAX_LABEL": "Fax:",
       "REGISTRATION": "Petroleum Authority Registration No. 131 Committee 8/22/23"
     }
   }
 }
+
