@@ -1,0 +1,23 @@
+.ph-hero-section {
+  border-top: 2px solid rgba(139, 69, 19, 0.5);
+  border-bottom: 2px solid rgba(139, 69, 19, 0.5);
+}
+
+.ph-hero-section::before,
+.ph-hero-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(218, 165, 32, 0.6) 50%, transparent 100%);
+  z-index: 10;
+}
+
+.ph-hero-section::before {
+  top: 10px;
+}
+
+.ph-hero-section::after {
+  bottom: 10px;
+}
