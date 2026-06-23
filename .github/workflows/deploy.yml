@@ -33,7 +33,6 @@ jobs:
 
       - name: Prepare Deployment Folder
         run: |
-          # Create a clean folder for deployment artifacts
           mkdir -p deploy_package
           cp -r dist deploy_package/
           cp package.json deploy_package/
@@ -44,11 +43,10 @@ jobs:
         with:
           host: ${{ secrets.ORANGEHOST_HOST }}
           username: ${{ secrets.ORANGEHOST_USERNAME }}
-          key: ${{ secrets.ORANGEHOST_SSH_KEY }}
-          passphrase: ${{ secrets.ORANGEHOST_SSH_PASSPHRASE }}
-          port: ${{ secrets.ORANGEHOST_PORT || 22 }}
+          password: ${{ secrets.ORANGEHOST_PASSWORD }}
+          port: ${{ secrets.ORANGEHOST_PORT }}
           source: "deploy_package/*"
-          target: "${{ secrets.ORANGEHOST_TARGET_DIR }}" # e.g. /home/username/public_html
+          target: "${{ secrets.ORANGEHOST_TARGET_DIR }}"
           strip_components: 1
 
       - name: Execute post-deploy commands via SSH
@@ -56,17 +54,11 @@ jobs:
         with:
           host: ${{ secrets.ORANGEHOST_HOST }}
           username: ${{ secrets.ORANGEHOST_USERNAME }}
-          key: ${{ secrets.ORANGEHOST_SSH_KEY }}
-          passphrase: ${{ secrets.ORANGEHOST_SSH_PASSPHRASE }}
-          port: ${{ secrets.ORANGEHOST_PORT || 22 }}
+          password: ${{ secrets.ORANGEHOST_PASSWORD }}
+          port: ${{ secrets.ORANGEHOST_PORT }}
           script: |
             cd ${{ secrets.ORANGEHOST_TARGET_DIR }}
-            
-            # Install production dependencies only
             npm install --production
-            
-            # Restart Passenger Node.js app to apply the new code
             mkdir -p tmp
             touch tmp/restart.txt
-            
             echo "Deployment completed successfully!"
