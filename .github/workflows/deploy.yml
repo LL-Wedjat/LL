@@ -45,6 +45,7 @@ jobs:
           host: ${{ secrets.ORANGEHOST_HOST }}
           username: ${{ secrets.ORANGEHOST_USERNAME }}
           key: ${{ secrets.ORANGEHOST_SSH_KEY }}
+          passphrase: ${{ secrets.ORANGEHOST_SSH_PASSPHRASE }}
           port: ${{ secrets.ORANGEHOST_PORT || 22 }}
           source: "deploy_package/*"
           target: "${{ secrets.ORANGEHOST_TARGET_DIR }}" # e.g. /home/username/public_html
@@ -56,6 +57,7 @@ jobs:
           host: ${{ secrets.ORANGEHOST_HOST }}
           username: ${{ secrets.ORANGEHOST_USERNAME }}
           key: ${{ secrets.ORANGEHOST_SSH_KEY }}
+          passphrase: ${{ secrets.ORANGEHOST_SSH_PASSPHRASE }}
           port: ${{ secrets.ORANGEHOST_PORT || 22 }}
           script: |
             cd ${{ secrets.ORANGEHOST_TARGET_DIR }}
