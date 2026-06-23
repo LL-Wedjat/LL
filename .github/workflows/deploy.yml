@@ -1,0 +1,70 @@
+name: Deploy to OrangeHost
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Angular SSR App
+        run: npm run build
+
+      - name: Prepare Deployment Folder
+        run: |
+          # Create a clean folder for deployment artifacts
+          mkdir -p deploy_package
+          cp -r dist deploy_package/
+          cp package.json deploy_package/
+          cp package-lock.json deploy_package/
+
+      - name: Copy files via SCP to OrangeHost
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.ORANGEHOST_HOST }}
+          username: ${{ secrets.ORANGEHOST_USERNAME }}
+          key: ${{ secrets.ORANGEHOST_SSH_KEY }}
+          port: ${{ secrets.ORANGEHOST_PORT || 22 }}
+          source: "deploy_package/*"
+          target: "${{ secrets.ORANGEHOST_TARGET_DIR }}" # e.g. /home/username/public_html
+          strip_components: 1
+
+      - name: Execute post-deploy commands via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.ORANGEHOST_HOST }}
+          username: ${{ secrets.ORANGEHOST_USERNAME }}
+          key: ${{ secrets.ORANGEHOST_SSH_KEY }}
+          port: ${{ secrets.ORANGEHOST_PORT || 22 }}
+          script: |
+            cd ${{ secrets.ORANGEHOST_TARGET_DIR }}
+            
+            # Install production dependencies only
+            npm install --production
+            
+            # Restart Passenger Node.js app to apply the new code
+            mkdir -p tmp
+            touch tmp/restart.txt
+            
+            echo "Deployment completed successfully!"
