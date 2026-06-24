@@ -14,6 +14,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Code
@@ -31,34 +33,19 @@ jobs:
       - name: Build Angular SSR App
         run: npm run build
 
-      - name: Prepare Deployment Folder
+      - name: Push build artifacts to deploy branch
         run: |
-          mkdir -p deploy_package
-          cp -r dist deploy_package/
-          cp package.json deploy_package/
-          cp package-lock.json deploy_package/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Copy files via SCP to OrangeHost
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.ORANGEHOST_HOST }}
-          username: ${{ secrets.ORANGEHOST_USERNAME }}
-          password: ${{ secrets.ORANGEHOST_PASSWORD }}
-          port: ${{ secrets.ORANGEHOST_PORT }}
-          source: "deploy_package/*"
-          target: "${{ secrets.ORANGEHOST_TARGET_DIR }}"
-          strip_components: 1
+          git checkout --orphan deploy
+          git rm -rf .
 
-      - name: Execute post-deploy commands via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.ORANGEHOST_HOST }}
-          username: ${{ secrets.ORANGEHOST_USERNAME }}
-          password: ${{ secrets.ORANGEHOST_PASSWORD }}
-          port: ${{ secrets.ORANGEHOST_PORT }}
-          script: |
-            cd ${{ secrets.ORANGEHOST_TARGET_DIR }}
-            npm install --production
-            mkdir -p tmp
-            touch tmp/restart.txt
-            echo "Deployment completed successfully!"
+          cp -r dist/LL/browser ./browser
+          cp -r dist/LL/server ./server
+          cp package.json ./package.json
+          cp package-lock.json ./package-lock.json
+
+          git add browser server package.json package-lock.json
+          git commit -m "deploy: build $(date -u +'%Y-%m-%d %H:%M:%S UTC') from ${GITHUB_SHA::7}"
+          git push origin deploy --force
