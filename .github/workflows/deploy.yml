@@ -62,7 +62,7 @@ jobs:
             const serverModule = await import('./server/server.mjs');
             const server = http.createServer((req, res) => {
               try {
-                 const pathname = req.url.split('?')[0].replace(/^\//, '');
+                const pathname = req.url.split('?')[0];
                 const ext = path.extname(pathname).toLowerCase();
                 
                 if (ext && mimeTypes[ext]) {
