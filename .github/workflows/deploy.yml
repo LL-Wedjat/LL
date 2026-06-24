@@ -53,7 +53,7 @@ jobs:
           EOF
 
           if git ls-remote --exit-code --heads origin deploy; then
-            git checkout deploy
+            git checkout -f deploy
             git rm -rf .
           else
             git checkout --orphan deploy
