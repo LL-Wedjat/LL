@@ -41,8 +41,18 @@ jobs:
           cp package.json deploy_output/package.json
           cp package-lock.json deploy_output/package-lock.json
           cat > deploy_output/app.js << 'EOF'
+          const http = require('http');
+
           async function start() {
-            await import('./server/server.mjs');
+            const serverModule = await import('./server/server.mjs');
+            const server = http.createServer((req, res) => {
+              serverModule.reqHandler(req, res);
+            });
+
+            const port = process.env.PORT || 4000;
+            server.listen(port, () => {
+              console.log(`App listening on port ${port}`);
+            });
           }
           start();
           EOF
