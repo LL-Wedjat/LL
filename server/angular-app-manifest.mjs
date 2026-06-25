@@ -8,7 +8,7 @@ export default {
   {
     "renderMode": 2,
     "preload": [
-      "chunk-RN6ILYWX.js"
+      "chunk-IME4BXDA.js"
     ],
     "route": "/"
   },
@@ -31,10 +31,10 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 9544, hash: '1c54295dadd69d5e58a01a890db8648f31997eca42d0c61753b84a732925af28', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1246, hash: '877c5233aee3f3fcdb343ff7bfa6128eef1e3a6b7d93c0d49d62cd8b9afbdedc', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 50363, hash: '779e3d12d62978f4f6ef303f5c69282bf1e3803d951b5ac6e110d48a8c2c1748', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'liquid-light/index.html': {size: 82127, hash: 'e53ef5de9ba317b6f7dfab879cbcd802f8b15b3ed23dd455dc018c41f1c8cf04', text: () => import('./assets-chunks/liquid-light_index_html.mjs').then(m => m.default)},
-    'styles-P22E5V5N.css': {size: 40840, hash: 'jeXWU50n57c', text: () => import('./assets-chunks/styles-P22E5V5N_css.mjs').then(m => m.default)}
+    'index.csr.html': {size: 9544, hash: '836895864d0f7d7d0c816eb3e6b9358d2b18526ded6d2232ebca0f25b1a84f96', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1246, hash: 'f9d0099c47f4df8304af02912ef1bce8902daf6cf25e0ed6753f987036f76170', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'liquid-light/index.html': {size: 82127, hash: '2cc392640eb7cc6fd93fff367fb7b4963c13b08f7e1f315dbe842675475aa912', text: () => import('./assets-chunks/liquid-light_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 50413, hash: '5ea986814e52c40a72133ff5e0bae18cb3171f1c87370b6b74fbcdd0da449a6e', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'styles-QQQNFOI3.css': {size: 40870, hash: 'RBmf199WvCI', text: () => import('./assets-chunks/styles-QQQNFOI3_css.mjs').then(m => m.default)}
   },
 };
