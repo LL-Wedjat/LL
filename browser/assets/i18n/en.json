@@ -233,31 +233,31 @@
       "TITLE": "Pharaohs Int'l Companies",
       "ITEMS": [
         {
-          "name": "Marketing Consultants",
+          "name": "Pharaohs for Marketing Consultants",
           "description": "Providing data-driven strategic guidance, brand positioning, and comprehensive event creation to elevate your market presence and engage your target audience effectively."
         },
         {
-          "name": "Advertising & Printing",
+          "name": "Pharaohs for Advertising & Printing",
           "description": "Delivering world-class digital, offset, and large-format printing. From bespoke promotional materials and signage to complete corporate branding packages."
         },
         {
-          "name": "Marketing Research",
+          "name": "Pharaohs for Marketing Research",
           "description": "Conducting in-depth market analysis, matchmaking sessions, and competitive intelligence to help businesses successfully navigate and expand into new markets."
         },
         {
-          "name": "Trade Fairs & Conferences",
+          "name": "Pharaohs for Trade Fairs & Conferences",
           "description": "Expert end-to-end management of large-scale trade fairs, corporate conferences, and festivals, complete with custom stand fabrication and logistical support."
         },
         {
-          "name": "Hotels & Resorts Supply",
+          "name": "Pharaohs for Hotels & Resorts Supply",
           "description": "Serving as trusted general suppliers for the hospitality sector, providing premium operational materials, uniforms, and specialized equipment for hotels and resorts."
         },
         {
-          "name": "Imports & Exports",
+          "name": "Pharaohs for Imports & Exports",
           "description": "Facilitating seamless Int'l trade with rigorous quality control, connecting local markets with global suppliers to ensure a reliable supply chain."
         },
         {
-          "name": "Construction & Epoxy",
+          "name": "Pharaohs for Construction & Epoxy",
           "description": "Executing specialized engineering constructions and decorative finishes, featuring cutting-edge luminous epoxies and light-retaining paint technologies."
         }
       ]
@@ -281,4 +281,3 @@
     }
   }
 }
-
